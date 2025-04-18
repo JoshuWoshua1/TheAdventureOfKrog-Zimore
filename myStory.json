@@ -1,0 +1,215 @@
+{
+    "Title": "The Adventure of Krog-Zimore",
+    "Credits": "Created by Joshua Kim-Pearson (jkimpear@ucsc.edu).",
+    "InitialLocation": "Kingdom of Zing",
+    "Locations": {
+        "Kingdom of Zing": { 
+            "Body": "Your name is Krog-Zimore and you are in the kingdom of Zing, the beautiful cityscape brings joy to your eyes.",
+            "Choices": [
+                {
+                    "Text": "King's Note",
+                    "Target": "travel_to_king",
+                    "noKey": "Knighted"
+                },
+                {
+                    "Text": "Path to the temple",
+                    "Target": "Shiji Wiji Path",
+                    "Key": "Knighted",
+                    "noKey": "ReafUnrock"
+                },
+                {
+                    "Text": "Go to the Reaf Forest",
+                    "Target": "Reaf Forest",
+                    "Key": "ReafUnrock"
+                },
+                {
+                    "Text": "Look at a tree",
+                    "Message": "Mm yes a nice tree there, it sways in the light zing breeze"
+                },
+                {
+                    "Text": "Go to the King",
+                    "Target": "Victory",
+                    "Key": "Win"
+                }
+            ]
+        },
+        "travel_to_king": {
+            "Body": "You read a declaration stamped by king poomoji in your mailbox, he requests that you go to his pressence at once!",
+            "Choices": [
+                {
+                    "Text": "Present yourself to king Poomoji",
+                    "Target": "King_Poomoji"
+                }
+            ]
+        },
+        "King_Poomoji": {
+            "Body": "\"Kneel before me\" Declared king Poomoji, He raises his sword the stench slicer and places it on each of my arm knubs. \"Krog-Zimore, you are now a knight of Zing!\" said the king, now I must go to the training camp and be assigned my first adventure.",
+            "Choices": [
+                {
+                    "Text": "Go to the training ground",
+                    "Target": "Training_ground",
+                    "GiveKey": "Knighted"
+                }
+            ]
+        },
+        "Training_ground": {
+            "Body": "You visit the knight's training ground, and go to the express training section. The trainer asks you to first listen to a paid promotion by Zingland-unique liquors, and then proceeds to teach you all the early knight tricks. Once you finished the knight gave your first questing slip, in which it detailed how you are now the designated finder of the legendary fruit by the foot, which should be in the shiji wiji temple nearby.",
+            "Choices": [
+                {
+                    "Text": "Beat training dummy",
+                    "Message": "!!SLAM!! you hit it pretty hard"
+                },
+                {
+                    "Text": "return to the streets of Zing",
+                    "Target": "Kingdom of Zing"
+                }
+            ]
+        },
+        "Shiji Wiji Path": {
+            "Body": "You embark on your quest to aquire the fruit by the foot, you wonder what fruit grows by feet but you quickly forget about it. You arrive at the temple after walking up what felt like a billion steps.",
+            "Choices": [
+                {
+                    "Text": "Enjoy the view",
+                    "Message": "The view is fantabulous from the Shiji Wiji Temple, you should come here more often now that you are knighted"
+                },
+                {
+                    "Text": "Enter the temple",
+                    "Target": "Shiji Wiji Temple"
+                }
+            ]
+        },
+        "Shiji Wiji Temple": {
+            "Body": "You enter the temple, and travel to the top where the fruit by the foot should be, but instead you find an evil looking gremlin! he announces himself: \"I----------  am Jack Brak and I have come for the fruitttt!\" Oh no! he already has the legendary fruit in his hands and is running away! You must persue him to retrieve it!",
+            "Choices": [
+                {
+                    "Text": "Follow Jack Brak's strangly indented footsteps",
+                    "Target": "Reaf Forest",
+                    "GiveKey": "ReafUnrock"
+                }
+            ]
+        },
+        "Reaf Forest": {
+            "Body": "Following his footsteps you arrive in the legendary Reaf forest! You've heard of this place in stories but its just magical being here in the flesh. Otherworldy fauna is all over the place! However you lost Jack Brak's trail.",
+            "Choices": [
+                {
+                    "Text": "Follow a bubbling sound",
+                    "Target": "Reaf Hideout"
+                },
+                {
+                    "Text": "See into the fauna with the sharigan and travel the path now uncovered",
+                    "Target": "Reaf Village",
+                    "Key": "sharingan"
+                },
+                {
+                    "Text": "return to Zing",
+                    "Target": "Kingdom of Zing"
+                }
+            ]
+        },
+        "Reaf Hideout": {
+            "Body": "You enter the hideout and find a bubbling substance that is emitting great heat! to the side you see a dead husk of an animal with a red eye with small black tomoe on it. !!!! the eye leaps from its socket and lodges itself into your face! After a moment of shock you realize your sight has gotten astronomically better and you can see the tiny details of everything!",
+            "Choices": [
+                {
+                    "Text": "Return to the forest with your new visual prowess",
+                    "Target": "Reaf Forest",
+                    "GiveKey": "sharingan" 
+                }
+            ]
+        },
+        "Reaf Village": {
+            "Body": "You travel a broken path and end up in a village! one of the villagers tells you that this is the hidden village in the Reaf and that they saw Jack Brak travelling to the abandoned mineshaft called Kraft Mine.",
+            "Choices": [
+                {
+                    "Text": "Return to the Reaf Forest",
+                    "Target": "Reaf Forest"
+                },
+                {
+                    "Text": "Visit the Kraft Mine",
+                    "Target": "KraftMine"
+                },
+                {
+                    "Text": "Generator",
+                    "Target": "Generator",
+                    "Key": "Power"
+                },
+                {
+                    "noKey": "Win",
+                    "Text": "Jack Brak's House",
+                    "Target": "Jack Brak House",
+                    "Key": "BrakHouse"
+                }
+            ]
+        },
+        "KraftMine": {
+            "Body": "You arrive at the Kraft Mine, the last place Jack Brak was seen. You see a lever hooked up to a mechanism with something poking out the top of it",
+            "Choices": [
+                {
+                    "noKey": "PowOn",
+                    "Text": "Pull the lever",
+                    "Message": "You pull the lever but nothing happens... perhaps it needs power from the Reaf village",
+                    "GiveKey": "Power"
+                },
+                {
+                    "Key": "PowOn",
+                    "Text": "Pull the lever",
+                    "Message": "You pull the lever and a Map straight to Jack Brak's house drops! it says its nearby the Reaf Village",
+                    "GiveKey": "BrakHouse"
+                },
+                {
+                    "Text": "Return to the Reaf Village",
+                    "Target": "Reaf Village"
+                }
+            ]
+        },
+        "Generator": {
+            "Body": "This is the Kraft Mine Generator, its been off for a while and you need to toggle the breaker switches in order to turn it on!",
+            "Choices": [
+                {
+                    "Text": "Toggle Breaker A",
+                    "SwitchAction": {
+                        "Toggle": ["A","B"],
+                        "TurnOff": ["C"]
+                    }
+                },
+                {
+                    "Text": "Toggle Breaker B",
+                    "SwitchAction": {
+                        "Toggle": ["B","C"]
+                    }
+                },
+                {
+                    "Text": "Toggle Breaker C",
+                    "SwitchAction": {
+                        "Toggle": ["C","A"]
+                    }
+                },
+                {
+                    "Text": "Return to the Reaf Village",
+                    "Target": "Reaf Village"
+                }
+            ]
+        },
+        "Jack Brak House": {
+            "Body": "You arrive at Jack Brak's House and are ready to confront him, you have your sword ready to break in to retrieve the fruit by the foot",
+            "Choices": [
+                {
+                    "Text": "Break in and attack!",
+                    "Target": "Jack Brak",
+                    "GiveKey": "Win"
+                }
+            ]
+        },
+        "Jack Brak": {
+            "Body": "You battle hard with Jack Brak, he brings out all the big guns, Chicken Jockey, Flint and Steel, The Nether, but as you fight you beat everything and retrieve the fruit by the foot! now you must return to the king and complete your quest.",
+            "Choices": [
+                {
+                    "Text": "Return to Zing with the fruit by the foot",
+                    "Target": "Kingdom of Zing"
+                }
+            ]
+        },
+        "Victory": {
+            "Body": "You have completed your quest and delivered the fruit by the foot to king Poomoji. Krog-Zimore had a wonderful life as a Knight of Zing and continued to embark on epic quests such as this one."
+        }
+    }
+}
