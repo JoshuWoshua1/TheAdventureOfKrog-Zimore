@@ -1,3 +1,7 @@
+The story: The Adventure Of Krog-Zimore
+By: Joshua Kim-Pearson          id: 2047958         CMPM120
+
+
 # StoryGraphTool
 
 An exercise in building data-driven game design
